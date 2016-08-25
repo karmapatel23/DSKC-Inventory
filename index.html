@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<h1>Supplies</h1>
+<form action="update.php" method="post">
+<select name="math">
+    <option value="add">Add</option>
+    <option value="subtract">Subtract</option>
+  </select>
+<table width="1000" border="1">
+  <tr>
+    <td width="250">&nbsp;</td>
+    <td width="250">Unit Size</td>
+    <td width="250">Quantity</td>
+    <td width="250">Price per Unit</td>
+  </tr>
+  <tr>
+    <td>Coffee Beans (lb)</td>
+    <td><input type="text" width="250" name="coffeeS"> </td>
+    <td><input type="text" width="250" name="coffeeQ"></td>
+    <td><input type="text" width="250" name="coffeeP"></td>
+  </tr>
+  <tr>
+    <td>Cream (oz)</td>
+    <td><input type="text" width="250" name="creamS"></td>
+    <td><input type="text" width="250" name="creamQ"></td>
+    <td><input type="text" width="250" name="creamP"></td>
+  </tr>
+  <tr>
+    <td>Sugar (oz)</td>
+    <td><input type="text" width="250" name="sugarS"></td>
+    <td><input type="text" width="250" name="sugarQ"></td>
+    <td><input type="text" width="250" name="sugarP"></td>
+  </tr>
+  <tr>
+    <td>Cups</td>
+    <td><input type="text" width="250" name="cupsS"></td>
+    <td><input type="text" width="250" name="cupsQ"></td>
+    <td><input type="text" width="250" name="cupsP"></td>
+  </tr>
+</table>
+<input type="submit" value="Submit">
+</form>
+<?php
+include("log.php");
+?>
+</body>
+</html>
